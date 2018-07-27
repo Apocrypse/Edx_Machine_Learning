@@ -7,6 +7,40 @@ X_train = np.genfromtxt(sys.argv[1], delimiter=",")
 y_train = np.genfromtxt(sys.argv[2])
 X_test = np.genfromtxt(sys.argv[3], delimiter=",")
 
+
+def pluginClassifier(X_train, y_train, X_test):
+
+    # calculate prior by MLE
+    pis = priorMLE(y_train)
+    # calculate parameters of likelihood by MLE
+    mus, sigmas, sigma_dets = likelihoodsMLE(X_train, y_train)
+
+    classes = np.unique(y_train)
+    c = classes.shape[0]
+
+    n, d = X_test.shape
+    prob_pred = np.zeros((n, c))
+
+    for i in range(n):
+        x = np.matrix(X_test[i, :]).T
+
+        i_prob = np.zeros(c)
+        for j in range(c):
+            # calculate Gaussian likelihood
+            mu = mus[classes[j]]
+            sigma = sigmas[classes[j]]
+            sigma_det = sigma_dets[classes[j]]
+            likelihood = multiGaussianProb(x, mu, sigma, sigma_det)
+            # calculate proportion of posterior
+            pi = pis[classes[j]]
+            poster = pi * likelihood
+            i_prob[j] = poster
+
+        prob_pred[i, :] = i_prob / np.sum(i_prob)
+
+    return prob_pred
+
+
 def priorMLE(y_train):
 
     n = y_train.shape[0]
@@ -56,39 +90,6 @@ def multiGaussianProb(x, mu, sigma, sigma_det):
     exp = np.exp(- 0.5 * (x - mu).T * sigma.I * (x - mu))
 
     return coef * exp
-
-
-def pluginClassifier(X_train, y_train, X_test):
-
-    # calculate prior by MLE
-    pis = priorMLE(y_train)
-    # calculate parameters of likelihood by MLE
-    mus, sigmas, sigma_dets = likelihoodsMLE(X_train, y_train)
-
-    classes = np.unique(y_train)
-    c = classes.shape[0]
-
-    n, d = X_test.shape
-    prob_pred = np.zeros((n, c))
-
-    for i in range(n):
-        x = np.matrix(X_test[i, :]).T
-
-        i_prob = np.zeros(c)
-        for j in range(c):
-            # calculate Gaussian likelihood
-            mu = mus[classes[j]]
-            sigma = sigmas[classes[j]]
-            sigma_det = sigma_dets[classes[j]]
-            likelihood = multiGaussianProb(x, mu, sigma, sigma_det)
-            # calculate proportion of posterior
-            pi = pis[classes[j]]
-            poster = pi * likelihood
-            i_prob[j] = poster
-
-        prob_pred[i, :] = i_prob / np.sum(i_prob)
-
-    return prob_pred
 
 
 # assuming final_outputs is returned from function
