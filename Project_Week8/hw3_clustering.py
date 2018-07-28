@@ -77,6 +77,7 @@ def EMGMM(data):
 
 		# M-step
 		pis, mus, sigmas = maximumLikelihood(data, cluster_num, n, d, phis)
+		print(pis)
 
 		filename = "pi-" + str(i+1) + ".csv"
 		np.savetxt(filename, pis, delimiter=",")
