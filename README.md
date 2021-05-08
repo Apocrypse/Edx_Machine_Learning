@@ -1,33 +1,33 @@
 # Machine Learning
 
 Projects:
-- Ridge Regression and Active Learning
-- Bayes Classifier
-- K Means and Gaussian Mixture Model
-- Positive Matrix Factorization
+- [Ridge Regression and Active Learning](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Project_Week03/hw1_regression.py)
+- [Bayes Classifier](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Project_Week06/hw2_classification.py)
+- [K Means and Gaussian Mixture Model](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Project_Week08/hw3_clustering.py)
+- [Positive Matrix Factorization](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Project_Week11/hw4_PMF.py)
 
 Lectures:
-- Lecture01: Overview and MLE
-- Lecture02: Linear Regression and Least Squares
-- Lecture03: Ridge Regression
-- Lecture04: Bias-Variance and MAP
-- Lecture05: Bayesian Linear Regression
-- Lecture06: Sparse and LASSO
-- Lecture07: KNN and Bayes Classifiers
-- Lecture08: Linear Classifiers and Perceptron
-- Lecture09: Logistic Regression and Laplace Approximation
-- Lecture10: Kernel Methods and Gaussian Processes
-- Lecture11: SVM
-- Lecture12: Decision Trees
-- Lecture13: Boosting
-- Lecture14: K-means
-- Lecture15: EM Algorithm
-- Lecture16: Gaussian Mixtures
-- Lecture17: Collaborative Filtering
-- Lecture18: Topic Modeling and Non-negative Matrix Factorization
-- Lecture19: PCA
-- Lecture20: Markov Models, Ranking and Semi-supervised Classification
-- Lecture21: Hidden Markov Models
-- Lecture22: Kalman Filter
-- Lecture23: Association Analysis
-- Lecture24: Model Selection
+- Lecture01: [Overview and MLE](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture01.pdf)
+- Lecture02: [Linear Regression and Least Squares](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture02.pdf)
+- Lecture03: [Ridge Regression](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture03.pdf)
+- Lecture04: [Bias-Variance and MAP](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture04.pdf)
+- Lecture05: [Bayesian Linear Regression](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture05.pdf)
+- Lecture06: [Sparse and LASSO](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture06.pdf)
+- Lecture07: [KNN and Bayes Classifiers](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture07.pdf)
+- Lecture08: [Linear Classifiers and Perceptron](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture08.pdf)
+- Lecture09: [Logistic Regression and Laplace Approximation](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture09.pdf)
+- Lecture10: [Kernel Methods and Gaussian Processes](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture10.pdf)
+- Lecture11: [SVM](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture11.pdf)
+- Lecture12: [Decision Trees](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture12.pdf)
+- Lecture13: [Boosting](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture133.pdf)
+- Lecture14: [K-means](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture14.pdf)
+- Lecture15: [EM Algorithm](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture15.pdf)
+- Lecture16: [Gaussian Mixtures](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture16.pdf)
+- Lecture17: [Collaborative Filtering](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture17.pdf)
+- Lecture18: [Topic Modeling and Non-negative Matrix Factorization](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture18.pdf)
+- Lecture19: [PCA](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture19.pdf)
+- Lecture20: [Markov Models, Ranking and Semi-supervised Classification](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture20.pdf)
+- Lecture21: [Hidden Markov Models](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture21.pdf)
+- Lecture22: [Kalman Filter](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture22.pdf)
+- Lecture23: [Association Analysis](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture23.pdf)
+- Lecture24: [Model Selection](https://github.com/LucasBoTang/Edx_Machine_Learning/blob/master/Lecture24.pdf)
